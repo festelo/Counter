@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import block.BlockControl?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TextField?>
@@ -7,11 +8,10 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Text?>
 
-<?import block.BlockControl?>
-<GridPane hgap="10.0" prefWidth="500.0" vgap="10.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.60">
+<?import javafx.scene.control.Label?>
+<GridPane hgap="10.0" prefHeight="250.0" prefWidth="589.0" vgap="10.0" xmlns="http://javafx.com/javafx/8.0.101"
+          xmlns:fx="http://javafx.com/fxml/1">
     <columnConstraints>
         <ColumnConstraints hgrow="SOMETIMES" />
         <ColumnConstraints hgrow="SOMETIMES" />
@@ -23,23 +23,25 @@
         <RowConstraints fillHeight="false" maxHeight="30.0" minHeight="17.0" prefHeight="20.0" />
     </rowConstraints>
     <children>
-        <TextField alignment="CENTER" editable="false" text="12987625" GridPane.columnSpan="3" />
+        <Label alignment="CENTER" text="0" GridPane.columnSpan="3" />
         <HBox fx:id="firstPanel" alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
             <padding>
                 <Insets left="10.0" right="10.0" />
             </padding>
             <children>
-                <BlockControl/>
+                <BlockControl />
             </children>
         </HBox>
-        <HBox fx:id="secondPanel" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <HBox fx:id="secondPanel" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1"
+              GridPane.rowIndex="1">
             <padding>
                 <Insets left="10.0" right="10.0" />
             </padding>
             <children>
             </children>
         </HBox>
-        <HBox fx:id="thirdPanel" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+        <HBox fx:id="thirdPanel" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2"
+              GridPane.rowIndex="1">
             <padding>
                 <Insets left="10.0" right="10.0" />
             </padding>
@@ -55,8 +57,11 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <Button maxHeight="25.0" maxWidth="84.0" minHeight="25.0" minWidth="84.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="Add" GridPane.halignment="RIGHT" />
-                <Button maxHeight="25.0" maxWidth="84.0" minHeight="25.0" minWidth="84.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="Remove" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                <Button maxHeight="25.0" maxWidth="84.0" minHeight="25.0" minWidth="84.0" mnemonicParsing="false"
+                        prefHeight="25.0" prefWidth="84.0" text="Add" GridPane.halignment="RIGHT" fx:id="addTeapot" />
+                <Button maxHeight="25.0" maxWidth="84.0" minHeight="25.0" minWidth="84.0" mnemonicParsing="false"
+                        prefHeight="25.0" prefWidth="84.0" text="Remove" GridPane.columnIndex="1"
+                        GridPane.halignment="LEFT" fx:id="removeTeapot" />
             </children>
         </GridPane>
         <GridPane alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
@@ -68,8 +73,11 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <Button maxHeight="25.0" maxWidth="84.0" minHeight="25.0" minWidth="84.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="Add" GridPane.halignment="RIGHT" />
-                <Button maxHeight="25.0" maxWidth="84.0" minHeight="25.0" minWidth="84.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="Remove" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                <Button maxHeight="25.0" maxWidth="84.0" minHeight="25.0" minWidth="84.0" mnemonicParsing="false"
+                        prefHeight="25.0" prefWidth="84.0" text="Add" GridPane.halignment="RIGHT" fx:id="addBulb" />
+                <Button maxHeight="25.0" maxWidth="84.0" minHeight="25.0" minWidth="84.0" mnemonicParsing="false"
+                        prefHeight="25.0" prefWidth="84.0" text="Remove" GridPane.columnIndex="1"
+                        GridPane.halignment="LEFT" fx:id="removeBulb" />
             </children>
         </GridPane>
         <GridPane alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
@@ -81,8 +89,11 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <Button maxHeight="25.0" maxWidth="84.0" minHeight="25.0" minWidth="84.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="Add" GridPane.halignment="RIGHT" />
-                <Button maxHeight="25.0" maxWidth="84.0" minHeight="25.0" minWidth="84.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="Remove" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                <Button maxHeight="25.0" maxWidth="84.0" minHeight="25.0" minWidth="84.0" mnemonicParsing="false"
+                        prefHeight="25.0" prefWidth="84.0" text="Add" GridPane.halignment="RIGHT" fx:id="addComputer" />
+                <Button maxHeight="25.0" maxWidth="84.0" minHeight="25.0" minWidth="84.0" mnemonicParsing="false"
+                        prefHeight="25.0" prefWidth="84.0" text="Remove" GridPane.columnIndex="1"
+                        GridPane.halignment="LEFT" fx:id="removeComputer" />
             </children>
         </GridPane>
     </children>
