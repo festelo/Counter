@@ -23,11 +23,10 @@ public class Controller implements Initializable{
     public void removeTeapot() {
 
     }
-    
+
     public void addBulb() {
 
     }
-
 
     public void removeBulb() {
 
@@ -36,7 +35,6 @@ public class Controller implements Initializable{
     public void addComputer() {
 
     }
-
 
     public void removeComputer() {
 
