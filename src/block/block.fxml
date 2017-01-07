@@ -5,19 +5,18 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
-
-<fx:root type="VBox" alignment="BOTTOM_CENTER" maxHeight="1.7976931348623157E308"
+<fx:root xmlns:fx="http://javafx.com/fxml/1" type="VBox" alignment="BOTTOM_CENTER"
+         maxHeight="1.7976931348623157E308"
          maxWidth="1.7976931348623157E308"
-         minHeight="-Infinity"
-         minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+         minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.60">
    <children>
       <Text fx:id="statusBox" strokeType="OUTSIDE" strokeWidth="0.0" text="Статус: Выключено">
          <VBox.margin>
             <Insets bottom="5.0" />
          </VBox.margin>
       </Text>
-      <Text fx:id="tempBox" strokeType="OUTSIDE" strokeWidth="0.0" text="Температура: 23*" />
-      <TextField fx:id="powerBox" alignment="CENTER" editable="false" text="2kWh" />
-      <Button fx:id="switchBtn" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Switch" />
+       <Text fx:id="tempBox" strokeType="OUTSIDE" strokeWidth="0.0" text="Температура: 23°"/>
+       <TextField fx:id="powerBox" alignment="CENTER" editable="false" text="2000"/>
+       <Button fx:id="switchBtn" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="On/Off"/>
    </children>
 </fx:root>

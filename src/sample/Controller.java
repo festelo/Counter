@@ -42,8 +42,9 @@ public class Controller implements Initializable {
     @FXML
     private Button removeComputer;
 
-    public void addTeapot() {
 
+    public void addTeapot() {
+        System.out.println("addTeapot");
     }
 
     public void removeTeapot() {
@@ -83,5 +84,5 @@ public class Controller implements Initializable {
 
     }
 
-    
+
 }

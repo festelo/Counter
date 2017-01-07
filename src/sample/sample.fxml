@@ -10,6 +10,7 @@
         <ColumnConstraints hgrow="SOMETIMES" />
         <ColumnConstraints hgrow="SOMETIMES" />
         <ColumnConstraints hgrow="SOMETIMES" />
+        <ColumnConstraints hgrow="SOMETIMES"/>
     </columnConstraints>
     <rowConstraints>
         <RowConstraints minHeight="10.0" valignment="TOP" vgrow="NEVER" />
@@ -17,7 +18,8 @@
         <RowConstraints fillHeight="false" maxHeight="30.0" minHeight="17.0" prefHeight="20.0" />
     </rowConstraints>
     <children>
-        <ToggleButton alignment="CENTER" text="0" GridPane.columnSpan="3" fx:id="counterButton"/>
+        <ToggleButton fx:id="counterButton" alignment="CENTER" prefHeight="55.0" prefWidth="187.0" text="0"
+                      GridPane.columnIndex="1" GridPane.columnSpan="3"/>
         <HBox fx:id="firstPanel" alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
             <padding>
                 <Insets left="10.0" right="10.0" />
@@ -51,11 +53,12 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <Button maxHeight="25.0" maxWidth="84.0" minHeight="25.0" minWidth="84.0" mnemonicParsing="false"
-                        prefHeight="25.0" prefWidth="84.0" text="Add" GridPane.halignment="RIGHT" fx:id="addTeapot" />
-                <Button maxHeight="25.0" maxWidth="84.0" minHeight="25.0" minWidth="84.0" mnemonicParsing="false"
-                        prefHeight="25.0" prefWidth="84.0" text="Remove" GridPane.columnIndex="1"
-                        GridPane.halignment="LEFT" fx:id="removeTeapot" />
+                <Button fx:id="addTeapot" maxHeight="25.0" maxWidth="84.0" minHeight="25.0" minWidth="84.0"
+                        mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="Add"
+                        GridPane.halignment="RIGHT"/>
+                <Button fx:id="removeTeapot" maxHeight="25.0" maxWidth="84.0" minHeight="25.0" minWidth="84.0"
+                        mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="Remove"
+                        GridPane.columnIndex="1" GridPane.halignment="LEFT"/>
             </children>
         </GridPane>
         <GridPane alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
@@ -67,11 +70,12 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <Button maxHeight="25.0" maxWidth="84.0" minHeight="25.0" minWidth="84.0" mnemonicParsing="false"
-                        prefHeight="25.0" prefWidth="84.0" text="Add" GridPane.halignment="RIGHT" fx:id="addBulb" />
-                <Button maxHeight="25.0" maxWidth="84.0" minHeight="25.0" minWidth="84.0" mnemonicParsing="false"
-                        prefHeight="25.0" prefWidth="84.0" text="Remove" GridPane.columnIndex="1"
-                        GridPane.halignment="LEFT" fx:id="removeBulb" />
+                <Button fx:id="addBulb" maxHeight="25.0" maxWidth="84.0" minHeight="25.0" minWidth="84.0"
+                        mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="Add"
+                        GridPane.halignment="RIGHT"/>
+                <Button fx:id="removeBulb" maxHeight="25.0" maxWidth="84.0" minHeight="25.0" minWidth="84.0"
+                        mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="Remove"
+                        GridPane.columnIndex="1" GridPane.halignment="LEFT"/>
             </children>
         </GridPane>
         <GridPane alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
@@ -83,11 +87,12 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <Button maxHeight="25.0" maxWidth="84.0" minHeight="25.0" minWidth="84.0" mnemonicParsing="false"
-                        prefHeight="25.0" prefWidth="84.0" text="Add" GridPane.halignment="RIGHT" fx:id="addComputer" />
-                <Button maxHeight="25.0" maxWidth="84.0" minHeight="25.0" minWidth="84.0" mnemonicParsing="false"
-                        prefHeight="25.0" prefWidth="84.0" text="Remove" GridPane.columnIndex="1"
-                        GridPane.halignment="LEFT" fx:id="removeComputer" />
+                <Button fx:id="addComputer" maxHeight="25.0" maxWidth="84.0" minHeight="25.0" minWidth="84.0"
+                        mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="Add"
+                        GridPane.halignment="RIGHT"/>
+                <Button fx:id="removeComputer" maxHeight="25.0" maxWidth="84.0" minHeight="25.0" minWidth="84.0"
+                        mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="Remove"
+                        GridPane.columnIndex="1" GridPane.halignment="LEFT"/>
             </children>
         </GridPane>
     </children>
