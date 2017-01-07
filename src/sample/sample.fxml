@@ -1,43 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ProgressBar?>
-<?import javafx.scene.control.ToggleButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
 
-<GridPane alignment="center" hgap="10" prefHeight="304.0" prefWidth="596.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.101" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
-    <rowConstraints>
-        <RowConstraints minHeight="100.0" />
-        <RowConstraints minHeight="25.0" />
-        <RowConstraints minHeight="25.0" />
-        <RowConstraints minHeight="25.0" />
-        <RowConstraints minHeight="25.0" />
-        <RowConstraints minHeight="25.0" />
-    </rowConstraints>
+<?import block.BlockControl?>
+<GridPane hgap="10.0" prefWidth="500.0" vgap="10.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.60">
     <columnConstraints>
-        <ColumnConstraints minWidth="25.0" />
-        <ColumnConstraints minWidth="25.0" />
-        <ColumnConstraints minWidth="25.0" />
-        <ColumnConstraints minWidth="25.0" />
-        <ColumnConstraints minWidth="75.0" />
-        <ColumnConstraints minWidth="50.0" />
-        <ColumnConstraints minWidth="50.0" />
-        <ColumnConstraints minWidth="75.0" />
-        <ColumnConstraints minWidth="33.3" />
-        <ColumnConstraints minWidth="33.4" />
-        <ColumnConstraints minWidth="33.3" />
-      <ColumnConstraints />
+        <ColumnConstraints hgrow="SOMETIMES" />
+        <ColumnConstraints hgrow="SOMETIMES" />
+        <ColumnConstraints hgrow="SOMETIMES" />
     </columnConstraints>
-   <children>
-       <ToggleButton minHeight="100.0" minWidth="490.0" mnemonicParsing="false" text="ToggleButton" GridPane.columnIndex="1" GridPane.columnSpan="11" GridPane.rowIndex="0" />
-       <Label minWidth="75.0" text="Энергия чайников" GridPane.columnIndex="0" GridPane.columnSpan="4" GridPane.rowIndex="1" />
-       <Label minWidth="75.0" text="Энергия лампочек" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="1" />
-       <Label minWidth="75.0" text="Энергия компьютеров" GridPane.columnIndex="8" GridPane.columnSpan="3" GridPane.rowIndex="1" />
-       <ProgressBar minHeight="50.0" minWidth="25.0" progress="0.0" GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.rowSpan="2" />
-       <ProgressBar minHeight="50.0" minWidth="25.0" progress="0.0" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.rowSpan="2" />
-       <ProgressBar minHeight="50.0" minWidth="25.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="2" GridPane.rowSpan="2" />
-       <ProgressBar minHeight="50.0" minWidth="25.0" progress="0.0" GridPane.columnIndex="3" GridPane.rowIndex="2" GridPane.rowSpan="2" />
-   </children>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" valignment="TOP" vgrow="NEVER" />
+        <RowConstraints valignment="TOP" vgrow="SOMETIMES" />
+        <RowConstraints fillHeight="false" maxHeight="30.0" minHeight="17.0" prefHeight="20.0" />
+    </rowConstraints>
+    <children>
+        <TextField alignment="CENTER" editable="false" text="12987625" GridPane.columnSpan="3" />
+        <HBox fx:id="firstPanel" alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+            <padding>
+                <Insets left="10.0" right="10.0" />
+            </padding>
+            <children>
+                <BlockControl/>
+            </children>
+        </HBox>
+        <HBox fx:id="secondPanel" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <padding>
+                <Insets left="10.0" right="10.0" />
+            </padding>
+            <children>
+            </children>
+        </HBox>
+        <HBox fx:id="thirdPanel" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <padding>
+                <Insets left="10.0" right="10.0" />
+            </padding>
+            <children>
+            </children>
+        </HBox>
+        <GridPane alignment="CENTER" GridPane.rowIndex="2">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Button maxHeight="25.0" maxWidth="84.0" minHeight="25.0" minWidth="84.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="Add" GridPane.halignment="RIGHT" />
+                <Button maxHeight="25.0" maxWidth="84.0" minHeight="25.0" minWidth="84.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="Remove" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+            </children>
+        </GridPane>
+        <GridPane alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Button maxHeight="25.0" maxWidth="84.0" minHeight="25.0" minWidth="84.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="Add" GridPane.halignment="RIGHT" />
+                <Button maxHeight="25.0" maxWidth="84.0" minHeight="25.0" minWidth="84.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="Remove" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+            </children>
+        </GridPane>
+        <GridPane alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Button maxHeight="25.0" maxWidth="84.0" minHeight="25.0" minWidth="84.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="Add" GridPane.halignment="RIGHT" />
+                <Button maxHeight="25.0" maxWidth="84.0" minHeight="25.0" minWidth="84.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="Remove" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+            </children>
+        </GridPane>
+    </children>
+    <padding>
+        <Insets bottom="10.0" top="10.0" />
+    </padding>
 </GridPane>
