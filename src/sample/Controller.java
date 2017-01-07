@@ -23,8 +23,7 @@ public class Controller implements Initializable{
     public void removeTeapot() {
 
     }
-
-
+    
     public void addBulb() {
 
     }
